@@ -1,2 +1,2 @@
 # joatenman.github.io
-UNSW devsoc application introduction
+26T3 DevSoc - TP Trainee Application
