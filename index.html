@@ -3,236 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevSoc Trainee Application 26T3</title>
+    <title>About Me - Danny Zhang</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        :root[data-theme="day"] {
-            --bg: #f7f5f0;
-            --surface: #ffffff;
-            --ink: #1a1a1a;
-            --ink-soft: #5c5850;
-            --rule: #d8d3c8;
-            --accent: #2f2f2f;
-            --field-bg: #ffffff;
-        }
-
-        :root[data-theme="night"] {
-            --bg: #12131a;
-            --surface: #1b1d26;
-            --ink: #ecebe6;
-            --ink-soft: #9a9a94;
-            --rule: #333644;
-            --accent: #ecebe6;
-            --field-bg: #232634;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            padding: 0 1.5rem 4rem;
-            background: var(--bg);
-            color: var(--ink);
-            font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-            font-size: 17px;
-            line-height: 1.65;
-            transition: background 0.35s ease, color 0.35s ease;
-        }
-
-        .wrap { max-width: 62ch; margin: 0 auto; }
-
-        header {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 1.5rem;
-            padding: 2.5rem 0 1.25rem;
-            border-bottom: 1px solid var(--rule);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.55rem;
-            font-weight: 600;
-            line-height: 1.25;
-            letter-spacing: -0.01em;
-        }
-
-        .theme-toggle {
-            display: flex;
-            flex: 0 0 auto;
-            border: 1px solid var(--rule);
-            border-radius: 999px;
-            overflow: hidden;
-        }
-
-        .theme-toggle button {
-            font: inherit;
-            font-size: 0.82rem;
-            padding: 0.3rem 0.85rem;
-            border: 0;
-            background: transparent;
-            color: var(--ink-soft);
-            cursor: pointer;
-            transition: background 0.2s ease, color 0.2s ease;
-        }
-
-        .theme-toggle button:hover { color: var(--ink); }
-
-        .theme-toggle button[aria-pressed="true"] {
-            background: var(--accent);
-            color: var(--bg);
-        }
-
-        .theme-toggle button:focus-visible {
-            outline: 2px solid var(--ink);
-            outline-offset: -2px;
-        }
-
-        section { padding: 2.25rem 0; border-bottom: 1px solid var(--rule); }
-
-        h2 {
-            font-size: 1.15rem;
-            font-weight: 600;
-            margin: 0 0 1rem;
-            line-height: 1.4;
-        }
-
-        ul.facts { list-style: none; margin: 0 0 1.25rem; padding: 0; }
-        ul.facts li { padding: 0.3rem 0; border-bottom: 1px dotted var(--rule); }
-        ul.facts strong { font-weight: 600; }
-
-        a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-        a:hover { color: var(--ink-soft); }
-
-        .images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1rem;
-            margin-top: 1.25rem;
-        }
-
-        .images img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 3px;
-            display: block;
-            background: var(--surface);
-        }
-
-        .complete-me {
-            background: var(--surface);
-            border: 1px solid var(--rule);
-            border-radius: 4px;
-            padding: 1.5rem;
-            margin-top: 1.25rem;
-        }
-
-        .complete-me p.written { margin: 0 0 1.5rem; white-space: pre-line; }
-
-        .links { list-style: none; margin: 0; padding: 0; }
-        .links li { padding: 0.45rem 0; border-top: 1px solid var(--rule); }
-        .links li:first-child { border-top: 0; }
-        .links .label { color: var(--ink-soft); font-size: 0.85rem; margin-right: 0.6rem; }
-
-        footer {
-            padding: 2rem 0;
-            color: var(--ink-soft);
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            * { transition: none !important; }
-        }
-
-        @media (max-width: 520px) {
-            header { flex-direction: column; }
-        }
-    </style>
 </head>
 <body>
-<div class="wrap">
+    <nav class="theme-toggle">
+        <a href="index.html" class="active">Day</a>
+        <a href="night.html">Night</a>
+    </nav>
 
     <header>
-        <h1>DevSoc &mdash; Trainee Application 26T3</h1>
-
-        <div class="theme-toggle" role="group" aria-label="Colour theme">
-            <button type="button" id="btn-day" aria-pressed="true">Day</button>
-            <button type="button" id="btn-night" aria-pressed="false">Night</button>
-        </div>
+        <h1>DevSoc - Trainee Application 26T3</h1>
     </header>
 
     <section id="about">
-        <h2>About me</h2>
-        <ul class="facts">
-            <li><strong>Name:</strong> Josh Josh</li>
+        <ul>
+            <li><strong>Name:</strong> Danny Zhang</li>
             <li><strong>Student details:</strong> 2nd Year Software Engineering</li>
             <li><strong>Country:</strong> Canada</li>
         </ul>
-        <p>Yowzers!</p>
-        <p><a href="https://www.linkedin.com/in/danny-zhang-72084115b/" target="_blank" rel="noopener">My LinkedIn profile</a></p>
+
     </section>
-
-    <section id="complete-me">
-        <h2>Complete me</h2>
-        <div class="complete-me">
-
-            <p class="written">
-                Write your text here. Blank lines between paragraphs will show up
-                as line breaks, so you can just type normally.
-            </p>
-
-            <ul class="links">
-                <li><span class="label">Link 1</span><a href="#" target="_blank" rel="noopener">Add your first link</a></li>
-                <li><span class="label">Link 2</span><a href="#" target="_blank" rel="noopener">Add your second link</a></li>
-                <li><span class="label">Link 3</span><a href="#" target="_blank" rel="noopener">Add your third link</a></li>
-            </ul>
-
-        </div>
+        <section id="introduction">
+        <h2>Day Shift Danny</h2>
+        <p class=""></p>
+        
     </section>
-
-    <section id="opposites-attract">
-        <h2>Opposites attract</h2>
-        <p>
-            Three takes on the theme: the yin and yang, which symbolises the coexistence
-            of opposites; Batman and the Joker, a pop-culture pair who only make sense
-            against each other; and two magnets doing what their polarities tell them to.
-        </p>
-        <div class="images">
-            <img src="https://raw.githubusercontent.com/joatenman/joatenman.github.io/refs/heads/main/Yin%20and%20Yang.jpg" alt="Yin and yang symbol" />
-            <img src="https://raw.githubusercontent.com/joatenman/joatenman.github.io/refs/heads/main/BvJ.jpg" alt="Batman and the Joker" />
-            <img src="https://raw.githubusercontent.com/joatenman/joatenman.github.io/refs/heads/main/Poles.png" alt="Magnetic poles attracting" />
-        </div>
+ 
+    <section id="bullets">
+        <ul class="bullet-list">
+            <li>
+                <p>"Day Shift Danny" loves staying physically active; the UNSW gym and the Village Green</p>
+                <p>running track have been his main exercise spots, but he dares you to challenge him in any sport! 😎</p>
+            </li>
+            <li>
+                <p>"Day Shift Danny" loves playing board games; he was a YuGiOh fanatic up until university, now is more</p>
+                <p>broad in his board game interests, including Catan, Codenames, Avalon, and most recently Love Letters!</p>
+            </li>
+            <li>
+                <p>"Day Shift Danny" enjoys dabbling into topics related culture, stocks, politics, and travel;</p>
+                <p>he has been to 4 different continents within the last 2 years, here is a recent picture in China!</p>
+                <img src="images/image1.jpg" alt="Picture in China" />
+            </li>
+        </ul>
     </section>
-
+ 
     <footer>
-        <p>Created with 2AM braincells &#10084;&#65039; on GitHub Pages</p>
+        <p>Inspired from Berkshire Hathaway's website; hosted on GitHub Pages</p>
     </footer>
-
-</div>
-
-<script>
-    (function () {
-        var root = document.documentElement;
-        var dayBtn = document.getElementById('btn-day');
-        var nightBtn = document.getElementById('btn-night');
-
-        function setTheme(theme) {
-            root.setAttribute('data-theme', theme);
-            dayBtn.setAttribute('aria-pressed', String(theme === 'day'));
-            nightBtn.setAttribute('aria-pressed', String(theme === 'night'));
-        }
-
-        dayBtn.addEventListener('click', function () { setTheme('day'); });
-        nightBtn.addEventListener('click', function () { setTheme('night'); });
-
-        // Start on whatever the visitor's system prefers.
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('night');
-        }
-    })();
-</script>
 </body>
 </html>
